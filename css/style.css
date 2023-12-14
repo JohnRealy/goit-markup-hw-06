@@ -104,7 +104,189 @@ p {
     stroke: #2F2F37;
     line-height: 0;
 }
+
 /*========== /MOBILE HEADER STYLES ==========*/
+
+/*========== MOBILE HERO STYLES ==========*/
+
+.hero {
+    background-color: #2e2f42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/people-office.jpg);
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.hero-title{
+    color: #ffffff;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    margin: 0 auto;
+    margin-bottom: 72px;
+    width: 200px;
+    
+}
+
+.hero-btn {
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: #4d5ae5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    display: block;
+    padding: 16px 32px;
+    margin: 0 auto;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #404bbf;
+}
+
+/*========== /MOBILE HERO STYLES ==========*/
+
+
+
+/*========== MOBILE OUR ADVANTAGES STYLES ==========*/
+
+.our-advantages-img{
+    display: none;
+}
+
+.our-advantages-list{
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.our-advantages-item-heading{
+    color:#2E2F42;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.our-advantages-item-text{
+    color: #434455;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/*========== /MOBILE OUR ADVANTAGES STYLES ==========*/
+
+
+
+/*========== MOBILE OUR TEAM STYLES ==========*/
+
+.our-team{
+    background-color: #F4F4FD;
+}
+
+.our-team-heading{
+    color: #2E2F42;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    margin-bottom: 72px;
+}
+
+.our-team-item{
+    border-radius: 0px 0px 4px 4px;
+    background: #fff;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    margin-bottom: 72px;
+}
+
+.our-team-dev-info{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.our-team-item-heading{
+    color: #2E2F42;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.our-team-text{
+    color:#434455;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.our-team-img{
+    width: 100%;
+}
+
+.social-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.social-list-item {
+    width: 40px;
+    height: 40px;
+}
+
+.social-list-link {
+    display: flex;
+    line-height: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: #404bbf;
+}
+
+.social-list-icon {
+    fill: #f4f4fd;
+}
+
+/*========== /MOBILE OUR TEAM STYLES ==========*/
+
+
 
 /*========== MOBILE MODAL STYLES ==========*/
 .mobile-menu-wrapper{
