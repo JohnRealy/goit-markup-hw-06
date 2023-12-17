@@ -193,6 +193,11 @@ p {
   background-color: #f4f4fd;
 }
 
+.our-team-block{
+  width: 264px;
+  margin: 0 auto;
+}
+
 .our-team-heading {
   color: #2e2f42;
   text-align: center;
@@ -238,7 +243,7 @@ p {
 }
 
 .our-team-img {
-  width: 100%;
+  width: 264px;
 }
 
 .social-list {
@@ -307,7 +312,7 @@ p {
 }
 
 .our-portfolio-item-img {
-  width: 286px;
+  width: 288px;
 }
 
 .our-porfolio-item-block {
@@ -506,7 +511,7 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  padding: 72px 24px 24px;
+  padding: 72px 16px 16px;
   width: 288px;
   min-height: 623px;
   border-radius: 4px;
@@ -574,10 +579,18 @@ p {
   font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.04em;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .user-input:focus {
   border-color: #4d5ae5;
+}
+
+.text-privacy-policy{
+  width: 231px;
 }
 
 .user-input:focus + .user-input-icon {
@@ -643,6 +656,8 @@ p {
   margin-bottom: 24px;
 }
 
+
+
 .privacy-checkbox {
   display: block;
   width: 16px;
@@ -655,7 +670,6 @@ p {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-right: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -839,7 +853,22 @@ p {
   }
 
   /*========== /MOBILE MODAL STYLES ==========*/
+
 }
+
+/*========== RETINA STYLES ==========*/
+
+@media screen and (min-resolution:192dpi) and (max-width:767px),
+screen and (min-resolution:2dppx) and (max-width:767px),
+screen and (min-device-pixel-ratio:2) and (max-width:767px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/people-office@2x.jpg);
+  }
+}
+
+/*========== /RETINA STYLES ==========*/
 
 @media screen and (min-width: 768px) {
   .container {
@@ -942,6 +971,12 @@ p {
 
   /*========== TABLET HERO STYLES ==========*/
 
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/people-office-tablet.jpg);
+  }
+
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
@@ -973,6 +1008,11 @@ p {
 
   /*========== TABLET OUR TEAM STYLES ==========*/
 
+  .our-team-block{
+    width: auto;
+    margin: 0;
+  }
+
   .our-team-block {
     justify-content: center;
     display: flex;
@@ -982,7 +1022,7 @@ p {
   }
 
   .our-team-item {
-    flex-basis: calc((100% - (108px * 2 + 24px)) / 2);
+    flex-basis: 264px;
     margin-bottom: 0;
   }
 
@@ -998,8 +1038,12 @@ p {
   }
 
   .our-portfolio-item {
-    flex-basis: calc((100%-24px) / 2);
+    width: 356px;
     margin-bottom: 0;
+  }
+
+  .our-portfolio-item-img{
+    width: 356px;
   }
 
   /*========== /TABLET OUR PORTFOLIO STYLES ==========*/
@@ -1075,8 +1119,26 @@ p {
     min-height: 584px;
   }
 
+  .text-privacy-policy {
+    width: auto;
+  }
+
   /*========== /TABLET BACKDROP STYLES ==========*/
 }
+
+/*========== RETINA STYLES ==========*/
+
+@media screen and (min-resolution:192dpi) and (min-width:768px),
+screen and (min-resolution:2dppx) and (min-width:768px),
+screen and (min-device-pixel-ratio:2) and (min-width:768px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/people-office-tablet@2x.jpg);
+  }
+}
+
+/*========== /RETINA STYLES ==========*/
 
 @media screen and (min-width: 1158px) {
   .container {
@@ -1137,6 +1199,20 @@ p {
   }
 
   /*========== /DESKTOP HEADER STYLES ==========*/
+  
+  
+  
+  /*========== /DESKTOP HEADER STYLES ==========*/
+  
+  .hero{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/people-office-desktop.jpg);
+  }
+  
+  /*========== /DESKTOP HEADER STYLES ==========*/
+
+
 
   /*========== DESKTOP OUR ADVANTAGES STYLES ==========*/
 
@@ -1168,13 +1244,21 @@ p {
 
   /*========== /DESKTOP OUR ADVANTAGES STYLES ==========*/
 
-  /*========== /DESKTOP OUR ADVANTAGES STYLES ==========*/
 
-  .our-team-item {
-    flex-basis: 264px;
+
+  /*========== DESKTOP OUR PORTFOLIO STYLES ==========*/
+
+ .our-portfolio-item {
+   width: 360px;
+ }
+
+  .our-portfolio-item-img {
+    width: 360px;
   }
 
-  /*========== /DESKTOP OUR ADVANTAGES STYLES ==========*/
+  /*========== /DESKTOP OUR PORTFOLIO STYLES ==========*/
+
+
 
   /*========== DESKTOP FOOTER STYLES ==========*/
 
@@ -1209,3 +1293,17 @@ p {
 
   /*========== /DESKTOP FOOTER STYLES ==========*/
 }
+
+/*========== RETINA STYLES ==========*/
+
+@media screen and (min-resolution:192dpi) and (min-width:1158px),
+screen and (min-resolution:2dppx) and (min-width:1158px),
+screen and (min-device-pixel-ratio:2) and (min-width:1158px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/people-office-desktop@2x.jpg);
+  }
+}
+
+/*========== /RETINA STYLES ==========*/
