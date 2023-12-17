@@ -217,6 +217,10 @@ p {
   margin-bottom: 72px;
 }
 
+.our-team-item:last-child{
+  margin-bottom: 0;
+}
+
 .our-team-dev-info {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -295,14 +299,10 @@ p {
 }
 
 .our-portfolio-item {
-  display: flex;
   width: 288px;
-  padding-bottom: 32px;
   flex-direction: column;
   gap: 32px;
   margin-bottom: 48px;
-  position: relative;
-  overflow: hidden;
 
   border: 1px solid #f4f4fd;
   background: #fff;
@@ -311,12 +311,16 @@ p {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+.our-portfolio-item:last-child{
+  margin-bottom: 0;
+}
+
 .our-portfolio-item-img {
   width: 288px;
 }
 
 .our-porfolio-item-block {
-  padding: 0 16px;
+  padding: 32px 16px;
 }
 
 .our-portfolio-item-heading {
@@ -325,6 +329,7 @@ p {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .our-portfolio-item-text {
@@ -333,6 +338,11 @@ p {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.our-portfolio-item-photo {
+  position: relative;
+  overflow: hidden;
 }
 
 .our-portfolio-item-img-text {
@@ -346,7 +356,7 @@ p {
   background-color: #4d5ae5;
   height: 100%;
   width: 100%;
-  transform: translateY(120%);
+  transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -361,6 +371,7 @@ p {
 .footer-info {
   background-color: #2e2f42;
   padding-bottom: 96px;
+  padding-top: 97.5px;
 }
 
 .footer-info-logo {
@@ -372,9 +383,12 @@ p {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-top: 97.5px;
   margin-bottom: 17.5px;
   text-align: center;
+}
+
+.footer-logo-block{
+  margin-bottom: 72px;
 }
 
 .footer-info-text {
@@ -383,7 +397,6 @@ p {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  margin-bottom: 72px;
 }
 
 .footer-info-second-part {
@@ -400,11 +413,14 @@ p {
   margin-bottom: 16px;
 }
 
+.footer-social{
+  margin-bottom: 72px;
+}
+
 .footer-social-list {
   display: flex;
   gap: 16px;
   justify-content: center;
-  margin-bottom: 72px;
 }
 
 .footer-social-list-item {
@@ -432,6 +448,11 @@ p {
   fill: #f4f4fd;
 }
 
+.subscribe-label{
+  display: block;
+  margin-bottom: 16px;
+}
+
 .subscribe-input {
   padding-left: 16px;
   align-items: center;
@@ -445,7 +466,6 @@ p {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #ffffff;
-  margin-bottom: 16px;
 }
 
 .subscribe-input::placeholder {
@@ -737,10 +757,17 @@ p {
     height: 100%;
     z-index: 99999;
     background-color: #fff;
-
     overflow: hidden;
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .mobile-menu-container{
+      padding-top: 72px;
+      padding-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
   }
 
   .mobile-menu-close-btn {
@@ -770,8 +797,7 @@ p {
   }
 
   .mobile-menu-nav {
-    margin-top: 72px;
-    margin-bottom: 168px;
+    margin-bottom: auto;
   }
 
   .mobile-menu-link {
@@ -971,10 +997,17 @@ screen and (min-device-pixel-ratio:2) and (max-width:767px) {
 
   /*========== TABLET HERO STYLES ==========*/
 
+  .hero-container{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
       url(../images/people-office-tablet.jpg);
+    padding-top: 112px;
+    padding-bottom: 112px;
   }
 
   .hero-title {
